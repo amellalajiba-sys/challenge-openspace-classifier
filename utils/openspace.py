@@ -1,4 +1,4 @@
-import from table.py to openspace.py
+from .table import Seat, Table
 
 import random
 class Openspace:
@@ -29,3 +29,5 @@ class Openspace:
         with open(filename, "w") as file:
             for i, table in enumerate(self.tables):
                 file.write(f"table {i+1}: {table.seats}\n")
+    def __str__(self):
+        return "C'est un openspace avec 6 tables qui contiennent 4 chaises chacune"    
