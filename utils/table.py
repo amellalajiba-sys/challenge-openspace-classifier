@@ -33,6 +33,7 @@ class Table:
                 seat.free = False
                 return f"{name} has taken the seat"  
     def left_capacity(self):
+        '''This is to show how many seats are left in a table.'''
         place_libre = 0
         for seat in self.seats:
             if seat.free:

@@ -33,6 +33,7 @@ class Openspace:
                     occupants.append(seat.occupant)
             print(f"Table {i+1}: {occupants}")
     def store(self, filename):
+        '''This is to store everything in a file'''
         with open(filename, "w") as file:
             for i, table in enumerate(self.tables):
                 file.write(f"table {i+1}: {table.seats}\n")
